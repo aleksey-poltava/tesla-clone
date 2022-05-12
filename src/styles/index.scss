@@ -1,0 +1,14 @@
+@import './shared';
+
+* {
+  font-family: $primary-font-family;
+  color: $primary-text-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}

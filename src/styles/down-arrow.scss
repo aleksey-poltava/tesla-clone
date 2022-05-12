@@ -1,0 +1,11 @@
+@import './functions';
+
+.downArrow {
+    display: flex;
+    justify-content: center;    
+
+    img {
+        height: 40px;        
+        animation: animateDown infinite 1.5s;
+    }
+}
