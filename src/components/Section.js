@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/section.scss';
 import ButtonGroup from './ButtonGroup';
 import DownArrow from './DownArrow';
@@ -12,11 +11,11 @@ function Section({title, description, backgroundImage, leftButtonText, rightButt
 
   return (
     <div className='wrap' style={{backgroundImage: `url(/images/${backgroundImage})`}}>
-        <ItemText title={title} description={description} />
-        <div className='centeredControls'>
-            <ButtonGroup buttons = {buttons} className='buttonGroup' />
-            <DownArrow src='/images/down-arrow.svg' />
-        </div>
+      <ItemText title={title} description={description} />
+      <div className='centeredControls'>
+        <ButtonGroup buttons = {buttons} className='buttonGroup' />
+        <DownArrow src='/images/down-arrow.svg' />
+      </div>
     </div>
   )
 }

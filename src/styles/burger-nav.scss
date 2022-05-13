@@ -1,0 +1,26 @@
+.burgerNav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 300px;
+    z-index: 100;
+    list-style: none;
+    padding: 20px;
+
+    .closeIcon {
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+    }
+
+    li {
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+        a {
+            font-weight: 600;
+        }
+    }
+}

@@ -12,6 +12,13 @@ function Home() {
             leftButtonText = 'Custom Order'
             rightButtonText = 'Existsing Inventory'
         />
+        <Section 
+            title = 'Tesla Model 3'
+            description = 'Order Online Touchless delivery'
+            backgroundImage = 'model-3.jpg'
+            leftButtonText = 'Custom Order'
+            rightButtonText = 'Existsing Inventory'
+        />
     </div>
   )
 }

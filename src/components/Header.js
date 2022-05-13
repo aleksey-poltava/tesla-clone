@@ -1,8 +1,16 @@
-import React from 'react'
+import Menu from './Menu';
+import '../styles/header.scss';
+import RightMenu from './RightMenu';
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className='container'>
+      <a>
+        <img src='/images/logo.svg' alt='logo' />
+      </a>
+      <Menu />
+      <RightMenu />
+    </div>
   )
 }
 
