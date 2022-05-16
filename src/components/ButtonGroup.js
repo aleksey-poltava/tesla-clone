@@ -6,7 +6,7 @@ function ButtonGroup({buttons}) {
   return (
     <div className='buttonGroup'>
         <Button style='leftButton' >{buttons.left}</Button>
-        <Button style='rightButton' >{buttons.right}</Button>
+        {buttons?.right && <Button style='rightButton' >{buttons.right}</Button>}        
     </div>
   )
 }

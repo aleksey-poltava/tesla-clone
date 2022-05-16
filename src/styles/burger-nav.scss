@@ -8,12 +8,17 @@
     z-index: 100;
     list-style: none;
     padding: 20px;
+    transition: transform 0.2s ease-in;    
 
-    .closeIcon {
+    .closePlaceholder {
         display: flex;
         justify-content: end;
-        cursor: pointer;
+
+        .closeIcon {        
+            cursor: pointer;
+        }
     }
+
 
     li {
         padding: 15px 0;

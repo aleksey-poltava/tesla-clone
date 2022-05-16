@@ -2,23 +2,20 @@ import React from 'react';
 import Section from '../components/Section';
 import '../styles/home.scss';
 
-function Home() {
+function Home({refs, data}) {
   return (
     <div className='main'>
-        <Section 
-            title = 'Tesla Model S'
-            description = 'Order Online Touchless delivery'
-            backgroundImage = 'model-s.jpg'
-            leftButtonText = 'Custom Order'
-            rightButtonText = 'Existsing Inventory'
+      {data && data.map((d) =>
+        <Section key={d.id}
+            id={d.id}
+            title = {d.title}
+            description = {d.description}
+            backgroundImage = {d.image}
+            leftButtonText = {d.leftButtonText}
+            rightButtonText = {d.rightButtonText}
+            slides = {data?.length}
         />
-        <Section 
-            title = 'Tesla Model 3'
-            description = 'Order Online Touchless delivery'
-            backgroundImage = 'model-3.jpg'
-            leftButtonText = 'Custom Order'
-            rightButtonText = 'Existsing Inventory'
-        />
+      )}
     </div>
   )
 }
